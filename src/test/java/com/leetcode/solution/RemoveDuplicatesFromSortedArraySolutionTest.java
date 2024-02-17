@@ -20,14 +20,14 @@ class RemoveDuplicatesFromSortedArraySolutionTest {
 
     @ParameterizedTest
     @MethodSource
-    void merge(int[] nums, int expected, int[] expectedArray) {
+    void removeDuplicates(int[] nums, int expected, int[] expectedArray) {
         int result = solution.removeDuplicates(nums);
 
         assertEquals(expected, result);
         assertArrayEquals(expectedArray, nums);
     }
 
-    public static Stream<Arguments> merge() {
+    public static Stream<Arguments> removeDuplicates() {
         return Stream.of(
                 Arguments.of(new int[]{1, 1, 2}, 2, new int[]{1, 2, 2}),
                 Arguments.of(new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}, 5, new int[]{0, 1, 2, 3, 4, 2, 2, 3, 3, 4})

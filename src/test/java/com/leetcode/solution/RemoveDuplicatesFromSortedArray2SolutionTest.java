@@ -10,27 +10,27 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class RemoveElementSolutionTest {
-    private RemoveElementSolution solution;
+class RemoveDuplicatesFromSortedArray2SolutionTest {
+    private RemoveDuplicatesFromSortedArray2Solution solution;
 
     @BeforeEach
     void setUp() {
-        solution = new RemoveElementSolution();
+        solution = new RemoveDuplicatesFromSortedArray2Solution();
     }
 
     @ParameterizedTest
     @MethodSource
-    void removeElement(int[] nums, int val, int expected, int[] expectedArray) {
-        int result = solution.removeElement(nums, val);
+    void removeDuplicates(int[] nums, int expected, int[] expectedArray) {
+        int result = solution.removeDuplicates(nums);
 
         assertEquals(expected, result);
         assertArrayEquals(expectedArray, nums);
     }
 
-    public static Stream<Arguments> removeElement() {
+    public static Stream<Arguments> removeDuplicates() {
         return Stream.of(
-                Arguments.of(new int[]{3, 2, 2, 3}, 3, 2, new int[]{2, 2, 2, 3}),
-                Arguments.of(new int[]{0, 1, 2, 2, 3, 0, 4, 2}, 2, 5, new int[]{0, 1, 3, 0, 4, 0, 4, 2})
+                Arguments.of(new int[]{1, 1, 1, 2, 2, 3}, 5, new int[]{1, 1, 2, 2, 3, 3}),
+                Arguments.of(new int[]{0, 0, 1, 1, 1, 1, 2, 3, 3}, 7, new int[]{0, 0, 1, 1, 2, 3, 3, 3, 3})
         );
     }
 }

@@ -1,7 +1,5 @@
 package com.leetcode.solution;
 
-import java.util.Arrays;
-
 /**
  * <b>H-Index II</b>
  * <p>Level: <i>Medium</i></p>

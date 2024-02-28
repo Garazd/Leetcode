@@ -29,6 +29,7 @@ class PerfectSquaresSolutionTest {
         return Stream.of(
                 Arguments.of(12, 3),
                 Arguments.of(16, 1),
+                Arguments.of(71, 4),
                 Arguments.of(13, 2)
         );
     }

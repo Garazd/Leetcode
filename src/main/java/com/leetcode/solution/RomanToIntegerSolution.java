@@ -6,7 +6,7 @@ package com.leetcode.solution;
  * <p>Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
  * Given a roman numeral, convert it to an integer.</p>
  *
- * @see <a href="https://leetcode.com/problems/candy/description/">13. Roman to Integer</a>
+ * @see <a href="https://leetcode.com/problems/roman-to-integer/description/">13. Roman to Integer</a>
  */
 public class RomanToIntegerSolution {
     public int romanToInt(String s) {

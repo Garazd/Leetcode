@@ -2,7 +2,7 @@ package com.leetcode.solution;
 
 /**
  * <b>Roman to Integer</b>
- * <p>Level: <i>Hard</i></p>
+ * <p>Level: <i>Easy</i></p>
  * <p>Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
  * Given a roman numeral, convert it to an integer.</p>
  *

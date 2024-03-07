@@ -19,13 +19,13 @@ class LengthOfLastWordSolutionTest {
 
     @ParameterizedTest
     @MethodSource
-    void majorityElement(String string, int expected) {
+    void lengthOfLastWord(String string, int expected) {
         int result = solution.lengthOfLastWord(string);
 
         assertEquals(expected, result);
     }
 
-    public static Stream<Arguments> majorityElement() {
+    public static Stream<Arguments> lengthOfLastWord() {
         return Stream.of(
                 Arguments.of("Hello World", 5),
                 Arguments.of("   fly me   to   the moon  ", 4),

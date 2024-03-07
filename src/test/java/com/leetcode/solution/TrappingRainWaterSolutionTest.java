@@ -19,13 +19,13 @@ class TrappingRainWaterSolutionTest {
 
     @ParameterizedTest
     @MethodSource
-    void candy(int[] height, int expected) {
+    void trap(int[] height, int expected) {
         int result = solution.trap(height);
 
         assertEquals(expected, result);
     }
 
-    public static Stream<Arguments> candy() {
+    public static Stream<Arguments> trap() {
         return Stream.of(
                 Arguments.of(new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}, 6),
                 Arguments.of(new int[]{4, 2, 0, 3, 2, 5}, 9)

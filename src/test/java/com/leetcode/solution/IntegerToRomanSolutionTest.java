@@ -19,13 +19,13 @@ class IntegerToRomanSolutionTest {
 
     @ParameterizedTest
     @MethodSource
-    void romanToInt(int num, String expected) {
+    void intToRoman(int num, String expected) {
         String result = solution.intToRoman(num);
 
         assertEquals(expected, result);
     }
 
-    public static Stream<Arguments> romanToInt() {
+    public static Stream<Arguments> intToRoman() {
         return Stream.of(
                 Arguments.of(3, "III"),
                 Arguments.of(58, "LVIII"),

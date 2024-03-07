@@ -19,13 +19,13 @@ class LongestCommonPrefixSolutionTest {
 
     @ParameterizedTest
     @MethodSource
-    void majorityElement(String[] strings, String expected) {
+    void longestCommonPrefix(String[] strings, String expected) {
         String result = solution.longestCommonPrefix(strings);
 
         assertEquals(expected, result);
     }
 
-    public static Stream<Arguments> majorityElement() {
+    public static Stream<Arguments> longestCommonPrefix() {
         return Stream.of(
                 Arguments.of(new String[]{"flower", "flow", "flight"}, "fl"),
                 Arguments.of(new String[]{"a"}, "a"),

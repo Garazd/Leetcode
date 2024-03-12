@@ -19,13 +19,13 @@ class ValidPalindromeSolutionTest {
 
     @ParameterizedTest
     @MethodSource
-    void strStr(String string, boolean expected) {
+    void isPalindrome(String string, boolean expected) {
         boolean result = solution.isPalindrome(string);
 
         assertEquals(expected, result);
     }
 
-    public static Stream<Arguments> strStr() {
+    public static Stream<Arguments> isPalindrome() {
         return Stream.of(
                 Arguments.of("A man, a plan, a canal: Panama", true),
                 Arguments.of("race a car", false),

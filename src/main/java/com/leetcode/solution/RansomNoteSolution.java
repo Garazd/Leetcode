@@ -7,7 +7,7 @@ package com.leetcode.solution;
  * from magazine and false otherwise.
  * Each letter in magazine can only be used once in ransomNote.</p>
  *
- * @see <a href="https://leetcode.com/problems/minimum-size-subarray-sum/description/">383. Ransom Note</a>
+ * @see <a href="https://leetcode.com/problems/ransom-note/description/">383. Ransom Note</a>
  */
 public class RansomNoteSolution {
     public boolean canConstruct(String ransomNote, String magazine) {

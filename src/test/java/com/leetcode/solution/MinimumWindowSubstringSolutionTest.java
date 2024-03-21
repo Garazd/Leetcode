@@ -19,13 +19,13 @@ class MinimumWindowSubstringSolutionTest {
 
     @ParameterizedTest
     @MethodSource
-    void canConstruct(String s, String string, String expected) {
+    void minWindow(String s, String string, String expected) {
         String result = solution.minWindow(s, string);
 
         assertEquals(expected, result);
     }
 
-    public static Stream<Arguments> canConstruct() {
+    public static Stream<Arguments> minWindow() {
         return Stream.of(
                 Arguments.of("ADOBECODEBANC", "ABC", "BANC"),
                 Arguments.of("a", "a", "a"),

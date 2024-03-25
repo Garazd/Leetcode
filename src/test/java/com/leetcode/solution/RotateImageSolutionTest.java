@@ -19,13 +19,13 @@ class RotateImageSolutionTest {
 
     @ParameterizedTest
     @MethodSource
-    void spiralOrder(int[][] board, int[][] expected) {
+    void rotate(int[][] board, int[][] expected) {
         int[][] result = solution.rotate(board);
 
         assertArrayEquals(expected, result);
     }
 
-    public static Stream<Arguments> spiralOrder() {
+    public static Stream<Arguments> rotate() {
         return Stream.of(
                 Arguments.of(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}},
                         new int[][]{{7, 4, 1}, {8, 5, 2}, {9, 6, 3}}),

@@ -19,13 +19,13 @@ class SetMatrixZeroesSolutionTest {
 
     @ParameterizedTest
     @MethodSource
-    void spiralOrder(int[][] board, int[][] expected) {
+    void setZeroes(int[][] board, int[][] expected) {
         int[][] result = solution.setZeroes(board);
 
         assertArrayEquals(expected, result);
     }
 
-    public static Stream<Arguments> spiralOrder() {
+    public static Stream<Arguments> setZeroes() {
         return Stream.of(
                 Arguments.of(new int[][]{{1, 1, 1}, {1, 0, 1}, {1, 1, 1}},
                         new int[][]{{1, 0, 1}, {0, 0, 0}, {1, 0, 1}}),

@@ -19,13 +19,13 @@ class ValidAnagramSolutionTest {
 
     @ParameterizedTest
     @MethodSource
-    void isWordPattern(String pattern, String string, boolean expected) {
+    void isAnagram(String pattern, String string, boolean expected) {
         boolean result = solution.isAnagram(pattern, string);
 
         assertEquals(expected, result);
     }
 
-    public static Stream<Arguments> isWordPattern() {
+    public static Stream<Arguments> isAnagram() {
         return Stream.of(
                 Arguments.of("anagram", "nagaram", true),
                 Arguments.of("rat", "car", false)

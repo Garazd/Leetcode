@@ -11,7 +11,7 @@ import java.util.Map;
  * <p>Level: <i>Medium</i></p>
  * <p>Given an array of strings strs, group the anagrams together. You can return the answer in any order.</p>
  *
- * @see <a href="hhttps://leetcode.com/problems/group-anagrams/description/">49. Group Anagrams</a>
+ * @see <a href="https://leetcode.com/problems/group-anagrams/description/">49. Group Anagrams</a>
  */
 public class GroupAnagramsSolution {
     public List<List<String>> groupAnagrams(String[] strs) {

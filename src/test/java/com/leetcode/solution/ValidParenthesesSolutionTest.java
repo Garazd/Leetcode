@@ -19,13 +19,13 @@ class ValidParenthesesSolutionTest {
 
     @ParameterizedTest
     @MethodSource
-    void groupAnagrams(String string, boolean expected) {
+    void isValid(String string, boolean expected) {
         final boolean result = solution.isValid(string);
 
         assertEquals(expected, result);
     }
 
-    public static Stream<Arguments> groupAnagrams() {
+    public static Stream<Arguments> isValid() {
         return Stream.of(
                 Arguments.of("()", true),
                 Arguments.of("()[]{}", true),

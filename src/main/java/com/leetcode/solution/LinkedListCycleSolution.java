@@ -1,5 +1,7 @@
 package com.leetcode.solution;
 
+import com.leetcode.util.ListNode;
+
 /**
  * <b>Linked List Cycle</b>
  * <p>Level: <i>Easy</i></p>
@@ -11,16 +13,6 @@ package com.leetcode.solution;
  *
  * @see <a href="https://leetcode.com/problems/linked-list-cycle/description/">141. Linked List Cycle</a>
  */
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-        next = null;
-    }
-}
-
 public class LinkedListCycleSolution {
     public boolean hasCycle(ListNode head) {
         if (head == null) {

@@ -1,5 +1,6 @@
 package com.leetcode.solution;
 
+import com.leetcode.util.ListNode;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

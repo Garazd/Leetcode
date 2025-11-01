@@ -16,7 +16,7 @@ import java.util.Map;
  * evict the least recently used key.
  * The functions get and put must each run in O(1) average time complexity.</p>
  *
- * @see <a href="https://leetcode.com/problems/partition-list/description/">146. LRU Cache</a>
+ * @see <a href="https://leetcode.com/problems/lru-cache/description/">146. LRU Cache</a>
  */
 public class LRUCacheSolution {
 

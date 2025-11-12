@@ -9,7 +9,7 @@ class ReflectOverSecondaryDiagonalSolution {
         // 9 6 3
         // 8 5 2
         // 7 4 1
-        for (int i = 0; i < size; ++i) {
+        for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 newMatrix[size - 1 - j][size - 1 - i] = matrix[i][j];
             }

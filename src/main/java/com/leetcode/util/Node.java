@@ -8,11 +8,15 @@ public class Node {
     public int val;
     public Node next;
     public Node random;
+    public Node left;
+    public Node right;
 
     public Node(int val) {
         this.val = val;
         this.next = null;
         this.random = null;
+        this.left = null;
+        this.right = null;
     }
 
     @Override
@@ -44,7 +48,15 @@ public class Node {
                 (random == null && other.random == null)
                         || (random != null && other.random != null && random.equals(other.random, visited));
 
-        return nextEqual && randomEqual;
+        final boolean leftEqual =
+                (left == null && other.left == null)
+                        || (left != null && other.left != null && left.equals(other.left, visited));
+
+        final boolean rightEqual =
+                (right == null && other.right == null)
+                        || (right != null && other.right != null && right.equals(other.right, visited));
+
+        return nextEqual && randomEqual && leftEqual && rightEqual;
     }
 
     @Override

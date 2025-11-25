@@ -3,6 +3,7 @@ package com.leetcode.solution;
 import com.leetcode.util.TreeNode;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -15,16 +16,29 @@ import java.util.List;
  * @see <a href="https://leetcode.com/problems/path-sum/description/">112. Path Sum</a>
  */
 public class PathSumSolution {
+    List<Integer> list = new LinkedList<>();
+
     public boolean hasPathSum(TreeNode root, int targetSum) {
-        return false;
+        if (root == null) {
+            return false;
+        }
+
+        sum(root, 0);
+        return list.contains(targetSum);
     }
 
-    private void preorder(TreeNode node, List<TreeNode> nodes) {
+    private void sum(TreeNode node, int sum) {
         if (node == null) {
             return;
         }
-        nodes.add(node);
-        preorder(node.left, nodes);
-        preorder(node.right, nodes);
+        if (node.left != null) {
+            sum(node.left, sum + node.val);
+        }
+        if (node.right != null) {
+            sum(node.right, sum + node.val);
+        }
+        if (node.left == null && node.right == null) {
+            list.add(sum + node.val);
+        }
     }
 }

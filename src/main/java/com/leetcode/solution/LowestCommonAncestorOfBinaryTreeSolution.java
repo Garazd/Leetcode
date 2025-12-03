@@ -4,7 +4,7 @@ import com.leetcode.util.TreeNode;
 
 /**
  * <b>Lowest Common Ancestor of a Binary Tree</b>
- * <p>Level: <i>Hard</i></p>
+ * <p>Level: <i>Medium</i></p>
  *
  * <p>Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
  * According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q
